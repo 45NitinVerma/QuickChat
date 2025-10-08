@@ -41,7 +41,6 @@ export const AuthProvider = ({ children }) => {
 					withCredentials: true,
 				}
 			);
-			console.log("Login API response:", data);
 			if (data.success) {
 				setAuthUser(data.user);
 				connectSocket(data.user);
